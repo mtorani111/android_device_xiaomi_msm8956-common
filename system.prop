@@ -44,6 +44,7 @@ ro.build.shutdown_timeout=0
 media.camera.ts.monotonic=1
 persist.camera.HAL3.enabled=1
 persist.vendor.qti.telephony.vt_cam_interface=1
+vendor.camera.aux.packagelist=com.android.camera 
 
 # CNE/DPM
 persist.cne.feature=1
