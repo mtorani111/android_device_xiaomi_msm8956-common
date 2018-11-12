@@ -147,3 +147,12 @@ persist.timed.enable=true
 
 # WiFi
 wifi.interface=wlan0
+
+# Fling
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.min.fling_velocity=150 \
+ro.max.fling_velocity=20000
+
+# OTG
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.sys.oem.otg_support=true
