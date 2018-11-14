@@ -1,6 +1,6 @@
 
+/* 
 Copyright (c) 2013, The Linux Foundation. All rights reserved.
-
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
 met:
@@ -13,7 +13,6 @@ met:
     * Neither the name of The Linux Foundation nor the names of its
       contributors may be used to endorse or promote products derived
       from this software without specific prior written permission.
-
 THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED
 WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
 MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT
@@ -29,13 +28,10 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 /*!
 	@file
 	IPA_Netlink.h
-
 	@brief
 	IPACM Netlink Messaging Implementation File
-
 	@Author
 	Skylar Chang
-
 */
 #ifndef IPACM_NETLINK_H
 #define IPACM_NETLINK_H
@@ -51,9 +47,6 @@ extern "C"
 #include <pthread.h>
 #include <sys/select.h>
 #include <sys/socket.h>
-#include <linux/socket.h>
-#include <inaddr.h>
-#define sockaddr_storage __kernel_sockaddr_storage
 #include <linux/if.h>
 #include <linux/if_addr.h>
 #include <linux/rtnetlink.h>
@@ -64,11 +57,11 @@ extern "C"
 #define MAX_NUM_OF_FD 10
 #define IPA_NL_MSG_MAX_LEN (2048)
 
-/*---------------------------------------------------------------------------
+/*--------------------------------------------------------------------------- 
 	 Type representing enumeration of NetLink event indication messages
 ---------------------------------------------------------------------------*/
 
-/*---------------------------------------------------------------------------
+/*--------------------------------------------------------------------------- 
 	 Types representing parsed NetLink message
 ---------------------------------------------------------------------------*/
 #define IPA_NLA_PARAM_NONE        (0x0000)
@@ -93,8 +86,8 @@ extern "C"
 #define IPA_RTA_PARAM_METRICS     (0x0100)
 
 
-/*---------------------------------------------------------------------------
-	 Type representing function callback registered with a socket listener
+/*--------------------------------------------------------------------------- 
+	 Type representing function callback registered with a socket listener 
 	 thread for reading from a socket on receipt of an incoming message
 ---------------------------------------------------------------------------*/
 typedef int (*ipa_sock_thrd_fd_read_f)(int fd);
