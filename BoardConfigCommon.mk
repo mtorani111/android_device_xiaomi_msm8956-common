@@ -231,3 +231,7 @@ WIFI_DRIVER_FW_PATH_STA     := "sta"
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/msm8956-common/BoardConfigVendor.mk
+
+# Enable DRM plugins 64 bit compilation
+TARGET_ENABLE_MEDIADRM_64 := true
+
